@@ -2,37 +2,36 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link {
+  margin: 1rem;
+  color: rgb(18, 99, 2);
+  font-weight: 700;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  border: solid 2px rgb(114, 114, 114);
+  background-color: rgb(207, 207, 207);
+  color: black;
+  margin: 3rem auto;
+  width: 30rem;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.loan-detail-container {
+  text-align: left;
+  border: solid 1px black; 
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgb(233, 233, 233);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loan-detail {
+  margin: 0.2rem 0;
 }
