@@ -5,6 +5,7 @@ const BASE_URL = process.env.REACT_APP_SERVER === 'local'
 export async function createLoan(loan) {
   const res = await fetch(`${BASE_URL}/create`, {
     method: 'POST',
+    mode: 'cors',
     headers: {
       'Content-Type': 'application/json'
     },
@@ -16,6 +17,7 @@ export async function createLoan(loan) {
 export async function findLoan(id) {
   const res = await fetch(`${BASE_URL}/details/${id}`, {
     method: 'GET',
+    mode: 'cors',
     headers: {
       'Content-Type': 'application/json'
     }
@@ -26,6 +28,7 @@ export async function findLoan(id) {
 export async function updateLoan(id, loan) {
   const res = await fetch(`${BASE_URL}/update/${id}`, {
     method: 'PUT',
+    mode: 'cors',
     headers: {
       'Content-Type': 'application/json'
     },
